@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ToDos from '../ToDos';
 
 class Board extends React.Component {

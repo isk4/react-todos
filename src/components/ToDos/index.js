@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 const ToDos = (props) => {
   const mappedToDos = props.todos.map(todo =>
