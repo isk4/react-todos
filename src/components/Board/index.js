@@ -31,7 +31,11 @@ class Board extends React.Component {
   }
 
   handleExit = () => {
-    localStorage.setItem('todos', JSON.stringify(this.state.toDoList));
+    if (this.state.toDoList.length > 0) {
+      localStorage.setItem('todos', JSON.stringify(this.state.toDoList));
+    } else {
+      localStorage.removeItem('todos');
+    }
   }
 
 
